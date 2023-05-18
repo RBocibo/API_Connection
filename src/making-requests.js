@@ -60,6 +60,13 @@ function createPost()
   .then((json) => console.log(json));
 }
 
+function removePost() {
+    fetch('https://jsonplaceholder.typicode.com/posts/1', {
+  method: 'DELETE',
+});
+}
+
 export {listPosts}
 export {getPostById}
 export {createPost}
+export {removePost}
